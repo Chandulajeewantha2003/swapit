@@ -9,11 +9,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity7 : AppCompatActivity() {
+class MainActivity10 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main7)
+        setContentView(R.layout.activity_main10)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -59,13 +59,13 @@ class MainActivity7 : AppCompatActivity() {
         }
 
         // === Button click handling ===
-        val proposedItemsBtn = findViewById<Button>(R.id.button5)
+        val proposedItemsBtn = findViewById<Button>(R.id.button4)
         proposedItemsBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity10::class.java)
+            val intent = Intent(this, MainActivity7::class.java)
             startActivity(intent)
         }
 
-        val uploadedItemsBtn = findViewById<Button>(R.id.button4)
+        val uploadedItemsBtn = findViewById<Button>(R.id.button5)
         uploadedItemsBtn.setOnClickListener {
             // Already in MainActivity7 (optional: refresh or just do nothing)
         }
