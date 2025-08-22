@@ -7,10 +7,17 @@
         android:id="@+id/nav_categories"
         android:title="Categories"
         android:icon="@drawable/ic_categories"/>
+
+    <item
+        android:id="@+id/nav_additems"
+        android:title="AddItems"
+        android:icon="@drawable/ic_additems"/>
+
     <item
         android:id="@+id/nav_myitems"
         android:title="MyItems"
         android:icon="@drawable/ic_myitems"/>
+
     <item
         android:id="@+id/nav_profile"
         android:title="Profile"

@@ -8,11 +8,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity5 : AppCompatActivity() {
+class MainActivity6 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main5)
+        setContentView(R.layout.activity_main6)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -23,19 +23,19 @@ class MainActivity5 : AppCompatActivity() {
         // Initialize bottom navigation
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        // Set Home selected by default
-        bottomNav.selectedItemId = R.id.nav_home
+        // Set Categories selected by default
+        bottomNav.selectedItemId = R.id.nav_categories
 
         // Handle item clicks
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    // Already in MainActivity5
+                    startActivity(Intent(this, MainActivity5::class.java))
+                    overridePendingTransition(0,0)
                     true
                 }
                 R.id.nav_categories -> {
-                    startActivity(Intent(this, MainActivity6::class.java))
-                    overridePendingTransition(0,0) // No animation
+                    // Already in MainActivity6
                     true
                 }
                 R.id.nav_myitems -> {
