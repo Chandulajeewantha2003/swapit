@@ -40,12 +40,12 @@ class MainActivity9 : AppCompatActivity() {
                     true
                 }
                 R.id.nav_myitems -> {
-                 //   startActivity(Intent(this, MainActivity7::class.java))
+                   startActivity(Intent(this, MainActivity7::class.java))
                     overridePendingTransition(0, 0)
                     true
                 }
                 R.id.nav_profile -> {
-                 //   startActivity(Intent(this, MainActivity8::class.java))
+                   startActivity(Intent(this, MainActivity8::class.java))
                     overridePendingTransition(0, 0)
                     true
                 }
