@@ -24,7 +24,7 @@ class MainActivity4 : AppCompatActivity() {
         // Get Started button → redirect to MainActivity5
         val getStartedBtn = findViewById<Button>(R.id.button2)
         getStartedBtn.setOnClickListener {
-            //val intent = Intent(this, MainActivity5::class.java)
+            val intent = Intent(this, MainActivity5::class.java)
             startActivity(intent)
         }
     }
