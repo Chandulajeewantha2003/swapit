@@ -49,7 +49,7 @@ class MainActivity5 : AppCompatActivity() {
                     true
                 }
                 R.id.nav_additems -> {
-                    //startActivity(Intent(this, MainActivity9::class.java))
+                    startActivity(Intent(this, MainActivity9::class.java))
                     overridePendingTransition(0,0)
                     true
                 }
